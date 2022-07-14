@@ -1,0 +1,12 @@
+- name: Updates apt cache
+  apt: update_cache=true
+
+- name: Installs necessary packages
+  apt:
+    pkg:
+      - curl
+      - wget
+      - htop
+    state: present
+  when:
+    ansible_os_family == "Debian"

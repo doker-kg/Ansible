@@ -1,0 +1,2 @@
+- name: Updates apt cache
+  apt: update_cache=true

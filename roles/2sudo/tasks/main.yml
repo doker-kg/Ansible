@@ -1,0 +1,11 @@
+- name: Add the user 'user1' to sudo  groups
+  user:
+    name: user1
+    groups: sudo
+    append: yes
+
+- name: Add the user 'user2' to sudo  groups
+  user:
+    name: user2
+    groups: sudo
+    append: yes
