@@ -1,0 +1,20 @@
+- hosts: test-deb
+  tasks:
+    - name: Create a login user user1
+      user:
+        name: user1
+        password: '$6$36p7PmU0zQ2Fkjm$ePac3fgMOUqKvrLc/ImRte/gkOfoCTjKKfHZlz6rI49V2TKSP9VjitRtKfL3EjtxRvbAEd8WN5XZdUfgsW89Z1'
+        groups: sudo
+        shell: /bin/bash
+        state: present
+        system: no
+        createhome: yes
+    - name: Create a login user user2
+      user:
+        name: user2
+        password: '$6$36p7PmU0zQ2Fkjm$ePac3fgMOUqKvrLc/ImRte/gkOfoCTjKKfHZlz6rI49V2TKSP9VjitRtKfL3EjtxRvbAEd8WN5XZdUfgsW89Z1'
+        groups: sudo
+        shell: /bin/bash
+        state: present
+        system: no
+        createhome: yes
