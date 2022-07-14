@@ -1,7 +1,0 @@
-- hosts: test-deb
-  roles:
-    - 'create_users'
-    - '2sudo'
-    - 'update'
-    - 'install'
-
