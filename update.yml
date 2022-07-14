@@ -1,4 +1,0 @@
-- hosts: test-deb
-  tasks:
-    - name: Updates apt cache
-      apt: update_cache=true
